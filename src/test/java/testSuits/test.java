@@ -34,25 +34,25 @@ public class test {
     @Test(description = "Login olup şehir değiştirme")
     public void  test() throws InterruptedException {
         methodClass methodClass = new methodClass(driver,wait);
-        String email = "isteBitirmeProje@hotmail.com";
-        String pass = "123456789a";
+        String email = "x";
+        String pass = "x";
         methodClass
-                .loginMethod("Adana","Çukurova (Güzelyalı Mah.)")
+                .loginMethod("x")
                 .loginEmail(email)
                 .loginPass(pass)
-                .lokasyonMethod("Hatay","İskenderun (Meydan Mah.)")
+                .lokasyonMethod("x")
                 ;
     }
     @Test(description = "Adres ekleme")
     public void test2() throws InterruptedException {
         methodClass methodClass = new methodClass(driver,wait);
-        String email = "isteBitirmeProje@hotmail.com";
-        String pass = "123456789a";
-        String phone = "5393500834";
-        String adress = "Çukurova";
-        String directAdress = "Adana";
+        String email = "x";
+        String pass = "x";
+        String phone = "x";
+        String adress = "x";
+        String directAdress = "x";
         methodClass
-                .loginMethod("Adana","Çukurova (Güzelyalı Mah.)")
+                .loginMethod("x")
                 .loginEmail(email)
                 .loginPass(pass)
                 .addAdress(phone,adress,directAdress)
@@ -62,10 +62,10 @@ public class test {
     @Test(description = "Restaurant listeleme yapıp filtre uygula")
     public void test3() throws InterruptedException {
         methodClass methodClass = new methodClass(driver,wait);
-        String email = "isteBitirmeProje@hotmail.com";
-        String pass = "123456789a";
+        String email = "x";
+        String pass = "x";
         methodClass
-                .loginMethod("Adana","Çukurova (Güzelyalı Mah.)")
+                .loginMethod("x")
                 .loginEmail(email)
                 .loginPass(pass)
                 .restaurantList()
@@ -74,11 +74,11 @@ public class test {
     @Test(description = "Sepete ürün ekle çıkart")
         public void test4 () throws InterruptedException {
             methodClass methodClass = new methodClass(driver, wait);
-            String email = "isteBitirmeProje@hotmail.com";
-            String pass = "123456789a";
-            String food = "Kebap";
+            String email = "x";
+            String pass = "x";
+            String food = "x";
             methodClass
-                    .loginMethod("Adana", "Çukurova (Güzelyalı Mah.)")
+                    .loginMethod("x")
                     .loginEmail(email)
                     .loginPass(pass)
                     .restautantPacket(food)
@@ -89,13 +89,13 @@ public class test {
     @Test(description = "Sepette ürün var mı kontrol")
     public void test5 () throws InterruptedException {
         methodClass methodClass = new methodClass(driver, wait);
-        String email = "isteBitirmeProje@hotmail.com";
-        String pass = "123456789a";
+        String email = "x";
+        String pass = "x";
         methodClass
-                .loginMethod("Adana", "Çukurova (Güzelyalı Mah.)")
+                .loginMethod("x")
                 .loginEmail(email)
                 .loginPass(pass)
-                .shoppingCart("Sepetinizde ürün bulunmamaktadır.")
+                .shoppingCart("x")
 
         ;
     }
